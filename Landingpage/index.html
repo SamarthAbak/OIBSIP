@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>City Care Hospital</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#patient-details">Patient Details</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="main-content">
+        <div class="hospital-info">
+            <h2>About Us</h2>
+            <p>Welcome to City Care Hospital, where your health is our priority. We are a dedicated team of healthcare professionals committed to providing top-notch medical care with compassion and expertise.</p>
+        </div>
+
+        <div class="hospital-image">
+            <img src="images/hospital-image.jpeg" alt="Hospital Image">
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment-form">
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor">
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_jones">Dr. Jones</option>
+                
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="patient-details" class="patient-details">
+        <h2>Patient Details</h2>
+        <form>
+            <label for="patient_name">Name:</label>
+            <input type="text" id="patient_name" name="patient_name" required>
+
+            <label for="patient_age">Age:</label>
+            <input type="number" id="patient_age" name="patient_age" required>
+
+            <label for="patient_gender">Gender:</label>
+            <select id="patient_gender" name="patient_gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="patient_condition">Medical Condition:</label>
+            <textarea id="patient_condition" name="patient_condition" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Emergency Care</li>
+            <li>Surgery</li>
+            <li>Maternity Care</li>
+            <li>Radiology</li>
+            
+        </ul>
+    </section>
+
+    <section id="doctors" class="doctors-list">
+        <h2>Meet Our Doctors</h2>
+       <div id="doctors-img">
+        <div class="doctor-card">
+            <img src="images/Dr. Smith.jpg" alt="Dr. Smith">
+            <h3>Dr. Smith</h3>
+            <p>Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+            <img src="images/Dr. Jones.jpg" alt="Dr. Jones">
+            <h3>Dr. Jones</h3>
+            <p>Orthopedic Surgeon</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries and appointments, please contact us:</p>
+        <address>
+            Email: info@citycarehospital.com<br>
+            Phone: +123 456 7890
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 City Care Hospital. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

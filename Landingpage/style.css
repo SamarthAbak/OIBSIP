@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+  
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #3498db;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.appointment-form,
+.patient-details {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.appointment-form form,
+.patient-details form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:auto;
+}
+
+.appointment-form label,
+.patient-details label {
+    font-weight: bold;
+}
+
+.appointment-form button,
+.patient-details button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.services ul {
+    list-style-type: none;
+}
+
+.doctor-card {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.doctor-card img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 550px;
+    height: 375px;
+}
+
+#doctors-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.hospital-info {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.hospital-image {
+    flex: 1;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.hospital-image img {
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-content,
+    .hospital-info,
+    .hospital-image,
+    .appointment-form,
+    .patient-details,
+    .services,
+    .doctors-list,
+    .contact {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+    .doctors-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    .appointment-form,
+    .patient-details {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .appointment-form label,
+    .patient-details label {
+        font-size: 14px;
+    }
+
+    .appointment-form button,
+    .patient-details button {
+        font-size: 14px;
+    }
+}
